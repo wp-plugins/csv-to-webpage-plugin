@@ -10,9 +10,11 @@ CSV (Comma Separated Value) to Webpage plugin help to upload data in a CSV (exce
 
 == Description ==
 
-CSV (Excel File) to Webpage Component help to upload data in a CSV (Excel File) file to webpage in one click.It is easy to use and simple to implement.It is possible to upload CSV content to webpage in table format.
+CSV to Webpage plugin help to upload data in a CSV (Excel File) file to webpage in one click.It is easy to use and simple to implement.It is possible to upload CSV content to webpage in table format.
 
-This plugin is very helpful for those who need to update scores or any other data in a regular basis.Using this component it is possible to upload the file from backend to a specified location.There is options to set the style to display tables from the backend .
+This plugin is very helpful for those who need to display dynamic data from their excel sheet to their website as a table.Using this plugin it is possible to upload the file from backend to a specified location.There is options to set the style to display tables from the backend .
+
+CSV to Webpage plugin will come very handy if you manage a sports website in which you need to update scores, points table etc. regularly. Your updated excel file will go live on to your website with just few clicks of the mouse.
 
 
 
@@ -27,21 +29,20 @@ This plugin is very helpful for those who need to update scores or any other dat
 
 == Frequently Asked Questions ==
 
-= Can display data from two CSV file in one page ? =
+= Can I display data from two CSV files in one webpage ? =
 
-  Yes it is possible .You include the plugin shortcode two time as shown below.
+  Yes it is possible .You should include the plugin shortcode two times as shown below.
   [pearl_csv_to_webpage_display yourfilename1.csv]
   [pearl_csv_to_webpage_display yourfilename2.csv]
 
 = Can I customise the tables to match with the look and feel of my website ? =
 
-   Yes is you set styles from the admin area. 
+   Yes you can set styles from the admin area. 
 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
+1. This screen shot gives a demo of how data in a CSV file will appear on a webpage
 2. This is the second screen shot
 
 == Changelog ==
