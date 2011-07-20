@@ -20,11 +20,11 @@ CSV to Webpage plugin will come very handy if you manage a sports website in whi
 
 == Installation ==
 
-* Download and Unzip the file
-* Upload `pearl_csv_to_webpage` the folder to the `/wp-content/plugins/` directory
-* Place your CSV file to `/wp-content/plugins/pearl_csv_to_webpage/upload/` folder.
-* Activate the plugin through the 'Plugins' menu in WordPress
-* Go to the webpage where you want to display the CSV content and enter `[pearl_csv_to_webpage_display yourfilename.csv]`
+1. Download and Unzip the file
+2. Upload `pearl_csv_to_webpage` the folder to the `/wp-content/plugins/` directory
+3. Place your CSV file to `/wp-content/plugins/pearl_csv_to_webpage/upload/` folder.
+4. Activate the plugin through the 'Plugins' menu in WordPress
+5. Go to the webpage where you want to display the CSV content and enter `[pearl_csv_to_webpage_display yourfilename.csv]`
 
 
 == Frequently Asked Questions ==

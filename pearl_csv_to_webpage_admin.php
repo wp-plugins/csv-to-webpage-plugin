@@ -36,3 +36,4 @@
         </form>
         
          <p>Created by <a href="http://pearlbells.co.uk/" target="_blank">Pearlbells</a><br/> Follow me : <a href="http://twitter.com/#!/pearlbells" target="_blank">Twitter</a></p>
+	<p>You are welcome to email me on lizeipe@gmail.com if you require any advice or have any suggestions.</p>
