@@ -186,7 +186,7 @@ class pearl_csv_to_webpage_class
 	{
 		?>
         <div class="wrap">
-           <h2>Slideshow Settings</h2>
+           <h2>CSV to Webpage Settings</h2>
            <?php
 		       if($_REQUEST['submit'])
 			   {
