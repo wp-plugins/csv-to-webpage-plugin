@@ -28,8 +28,8 @@ class pearl_csv_to_webpage_class
 {
 	function pearl_csv_to_webpage_css()
 	{
-		$myStyleUrl = WP_PLUGIN_URL . '/pearl_csv_to_webpage/css/pearl_csv_to_webpage_css.css';
-        $myStyleFile = WP_PLUGIN_DIR . '/pearl_csv_to_webpage/css/pearl_csv_to_webpage_css.css';
+		$myStyleUrl = WP_PLUGIN_URL . '/csv-to-webpage-plugin/css/pearl_csv_to_webpage_css.css';
+        $myStyleFile = WP_PLUGIN_DIR . '/csv-to-webpage-plugin/css/pearl_csv_to_webpage_css.css';
         if ( file_exists($myStyleFile) ) 
 		{
             wp_register_style('myStyleSheets', $myStyleUrl);
@@ -106,7 +106,7 @@ class pearl_csv_to_webpage_class
 
 	    $filename = $filename;
 		
-		if (($handle = fopen($url."/pearl_csv_to_webpage/upload/".$filename, "r")) !== FALSE)
+		if (($handle = fopen($url."/csv-to-webpage-plugin/upload/".$filename, "r")) !== FALSE)
 		{
     	$row =0;
 		
