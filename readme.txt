@@ -24,7 +24,7 @@ CSV to Webpage plugin will come very handy if you manage a sports website in whi
 2. Upload `pearl_csv_to_webpage` the folder to the `/wp-content/plugins/` directory
 3. Place your CSV file to `/wp-content/plugins/pearl_csv_to_webpage/upload/` folder.
 4. Activate the plugin through the 'Plugins' menu in WordPress
-5. Go to the webpage where you want to display the CSV content and enter `[pearl_csv_to_webpage_display yourfilename.csv]`
+5. Go to the webpage where you want to display the CSV content and enter `[pearl_csv_to_webpage_display filename = yourfilename.csv]`
 
 
 == Frequently Asked Questions ==
@@ -32,8 +32,8 @@ CSV to Webpage plugin will come very handy if you manage a sports website in whi
 = Can I display data from two CSV files in one webpage ? =
 
   Yes it is possible .You should include the plugin shortcode two times as shown below.
-  [pearl_csv_to_webpage_display yourfilename1.csv]
-  [pearl_csv_to_webpage_display yourfilename2.csv]
+  [pearl_csv_to_webpage_display filename = yourfilename1.csv]
+  [pearl_csv_to_webpage_display filename = yourfilename2.csv]
 
 = Can I customise the tables to match with the look and feel of my website ? =
 
