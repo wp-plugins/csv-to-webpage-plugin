@@ -49,7 +49,8 @@ CSV to Webpage plugin will come very handy if you manage a sports website in whi
 
 = 1.0 =
 Initial Release
-
+= 1.1 =
+* Fixed Documentation Error - step 5
 
 == Upgrade Notice ==
 
