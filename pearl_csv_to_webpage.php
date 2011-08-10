@@ -72,19 +72,19 @@ class pearl_csv_to_webpage_class
 		  });
 		   
 		
-		 $jquery('#pearl_tbl tr:even').css({
+		 $jquery('.pearl_tblstyle tr:even').css({
 			   "background-color":pearl_csv_to_webpage_alt_bg_color,"color":pearl_csv_to_webpage_alt_font_color});
-		 $jquery('#pearl_tbl tr:odd').css({
+		 $jquery('.pearl_tblstyle tr:odd').css({
 			   "background-color":pearl_csv_to_webpage_bg_color,"color":pearl_csv_to_webpage_font_color});
-		 $jquery('#pearl_tbl tr td').css({
+		 $jquery('.pearl_tblstyle tr td').css({
 			   "padding":pearl_csv_to_webpage_padding});
-		 $jquery('#pearl_tbl tr').hover(
+		 $jquery('.pearl_tblstyle tr').hover(
 		function(){
 			 $jquery(this).css({"background-color":pearl_csv_to_webpage_mouseover_color,"color":pearl_csv_to_webpage_alt_mouseover_color,"cursor":"pointer"}); //mouseover
 		},
 		function(){
-			 $jquery('#pearl_tbl tr:even').css({"background-color":pearl_csv_to_webpage_alt_bg_color,"color":pearl_csv_to_webpage_alt_font_color});
-			 $jquery('#pearl_tbl tr:odd').css({"background-color":pearl_csv_to_webpage_bg_color,"color":pearl_csv_to_webpage_font_color});
+			 $jquery('.pearl_tblstyle tr:even').css({"background-color":pearl_csv_to_webpage_alt_bg_color,"color":pearl_csv_to_webpage_alt_font_color});
+			 $jquery('.pearl_tblstyle tr:odd').css({"background-color":pearl_csv_to_webpage_bg_color,"color":pearl_csv_to_webpage_font_color});
 		}
 	);}
 		
