@@ -304,8 +304,6 @@ class pearl_csv_to_webpage_class
             $allowedExts = array("csv");
             $dir = plugin_dir_path( __FILE__ );
             
-            echo $_FILES["uploadedfile"]["type"];
-            
             $temp = explode(".", $_FILES["uploadedfile"]["name"]);
             $extension = end($temp);
             if ((($_FILES["uploadedfile"]["type"] == "application/vnd.ms-excel"))
