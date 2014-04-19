@@ -3,5 +3,7 @@
 .pearl_tblstyle
 {
 	margin:10px;
+        border-collapse: inherit;
+        
 	
 }

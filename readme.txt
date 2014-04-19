@@ -27,7 +27,8 @@ Live Demo - <a href="http://pearlbells.co.uk/joomlaportfolio/6-csv-file-upload.h
 5. click `browse` and select the zip file.
 6. click 'install now'
 7. click `activate the plugin`
-8. Place your CSV file to `/wp-content/plugins/pearl_csv_to_webpage/upload/` folder.
+8. select the settings->CSV to Webpage
+8. upload the .csv file using 'upload' button
 9. Go to the webpage where you want to display the CSV content and enter `[pearl_csv_to_webpage_display filename = yourfilename.csv]`
 
 
@@ -57,6 +58,9 @@ Initial Release
 * Fixed Documentation Error - step 5
 
 == Upgrade Notice ==
+
+= 2.0 =
+Can upload the files from the wordpress admin section
 
 = 1.0 =
 Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.

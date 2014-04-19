@@ -53,7 +53,7 @@ class pearl_csv_to_webpage_class
 		function setStyleTable()
 		{
 			var pearl_csv_to_webpage_bg_color ='<?php echo get_option('pearl_csv_to_webpage_bg_color');?>';
-	        var pearl_csv_to_webpage_alt_bg_color ='<?php echo get_option('pearl_csv_to_webpage_alt_bg_color');?>';
+                        var pearl_csv_to_webpage_alt_bg_color ='<?php echo get_option('pearl_csv_to_webpage_alt_bg_color');?>';
 			var pearl_csv_to_webpage_font_color ='<?php echo get_option('pearl_csv_to_webpage_font_color');?>';
 			var pearl_csv_to_webpage_alt_font_color ='<?php echo get_option('pearl_csv_to_webpage_alt_font_color');?>';
 			var pearl_csv_to_webpage_border_width ='<?php echo get_option('pearl_csv_to_webpage_border_width');?>';
@@ -192,6 +192,9 @@ class pearl_csv_to_webpage_class
 			   {
 				   pearl_csv_to_webpage_class::pearl_csv_to_webpage_update_option();
 			   }
+                       elseif($_REQUEST['upload']) {
+                                 pearl_csv_to_webpage_class::pearl_upload_file();
+                       }
 			       pearl_csv_to_webpage_class::pearl_csv_to_webpage_print_option();
 		   ?>
         </div>
@@ -284,8 +287,55 @@ class pearl_csv_to_webpage_class
 	
 	function pearl_csv_to_webpage_print_option()
 	{
+                pearl_csv_to_webpage_class::pearl_csv_to_webpage_repeater();
 		include 'pearl_csv_to_webpage_admin.php';
 	}
+        
+        function pearl_csv_to_webpage_repeater() {
+                  $html = '<form enctype="multipart/form-data" action="" method="POST">
+                        <input type="hidden" name="picture" value="" />
+                        Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+                        <input type="submit" value="upload" name="upload" />
+                        </form>';
+                   echo  $html;
+        }
+        
+        function pearl_upload_file() {
+            $allowedExts = array("csv");
+            $dir = plugin_dir_path( __FILE__ );
+            
+            echo $_FILES["uploadedfile"]["type"];
+            
+            $temp = explode(".", $_FILES["uploadedfile"]["name"]);
+            $extension = end($temp);
+            if ((($_FILES["uploadedfile"]["type"] == "application/vnd.ms-excel"))
+            && ($_FILES["uploadedfile"]["size"] < 2000000)
+            && in_array($extension, $allowedExts))
+              {
+              if ($_FILES["uploadedfile"]["error"] > 0)
+                {
+                echo "Return Code: " . $_FILES["uploadedfile"]["error"] . "<br>";
+                }
+              else
+                {
+               
+                if (file_exists("upload/" . $_FILES["uploadedfile"]["name"]))
+                  {
+                  echo $_FILES["uploadedfile"]["name"] . " already exists. ";
+                  }
+                else
+                  {
+                  move_uploaded_file($_FILES["uploadedfile"]["tmp_name"],$dir."/upload/".$_FILES["uploadedfile"]["name"]);
+                  echo "Stored in: " . "upload/" . $_FILES["uploadedfile"]["name"];
+                  }
+                }
+              }
+            else
+              {
+              echo "Invalid file";
+              }  
+        }
+	
 	
 }
 add_action('admin_menu',array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage_menu'));
