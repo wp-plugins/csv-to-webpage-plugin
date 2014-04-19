@@ -56,6 +56,8 @@ Live Demo - <a href="http://pearlbells.co.uk/joomlaportfolio/6-csv-file-upload.h
 Initial Release
 = 1.1 =
 * Fixed Documentation Error - step 5
+= 2.0 =
+Added uploading option
 
 == Upgrade Notice ==
 
