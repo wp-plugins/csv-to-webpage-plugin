@@ -16,7 +16,7 @@ This plugin is very helpful for those who need to display dynamic data from thei
 
 CSV to Webpage plugin will come very handy if you manage a sports website in which you need to update scores, points table etc. regularly. Your updated excel file will go live on to your website with just few clicks of the mouse.
 
-Live Demo - <a href="http://pearlbells.co.uk/joomlaportfolio/6-csv-file-upload.html">Click here</a>
+Live Demo - <a href="http://pearlbells.co.uk/extensions/csv-to-webpage">Click here</a>
 
 == Installation ==
 
