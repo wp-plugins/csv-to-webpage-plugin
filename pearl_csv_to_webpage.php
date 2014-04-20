@@ -26,17 +26,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 $pearl_csv_to_webpage_class = new pearl_csv_to_webpage_class();
 class pearl_csv_to_webpage_class
 {
-	function pearl_csv_to_webpage_css()
-	{
-		$myStyleUrl = WP_PLUGIN_URL . '/csv-to-webpage-plugin/css/pearl_csv_to_webpage_css.css';
-        $myStyleFile = WP_PLUGIN_DIR . '/csv-to-webpage-plugin/css/pearl_csv_to_webpage_css.css';
-        if ( file_exists($myStyleFile) ) 
-		{
-            wp_register_style('myStyleSheets', $myStyleUrl);
-            wp_enqueue_style( 'myStyleSheets');
-        }
-	}
 	
+	 function safely_add_stylesheet() {
+             wp_enqueue_style( 'csv-to-webpage', plugins_url('css/pearl_csv_to_webpage_css.css', __FILE__) );
+         }
+         
 	function pearl_csv_to_webpage_script()
 	{
 		wp_deregister_script( 'jquery' );
@@ -337,7 +331,7 @@ class pearl_csv_to_webpage_class
 	
 }
 add_action('admin_menu',array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage_menu'));
-add_action('wp_print_styles', array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage_css'));
+add_action( 'wp_enqueue_scripts', array($pearl_csv_to_webpage_class,'safely_add_stylesheet') );
 add_action('wp_head', array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage_script'));
 add_shortcode('pearl_csv_to_webpage_display', array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage'));
 register_activation_hook(__FILE__,array($pearl_csv_to_webpage_class,'pearl_csv_to_webpage_install'));
