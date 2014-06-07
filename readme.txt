@@ -58,8 +58,13 @@ Initial Release
 * Fixed Documentation Error - step 5
 = 2.0 =
 Added uploading option
+= 3.0 =
+Changed the file structure
 
 == Upgrade Notice ==
+
+= 3.0 =
+Changed the file structure
 
 = 2.0 =
 Can upload the files from the wordpress admin section
