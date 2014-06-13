@@ -46,7 +46,7 @@ class cvsToWebpage {
      }
   
      public function opt_page() {
-         new displayForm;
+        
          $this->postData();
      }
      
@@ -62,6 +62,8 @@ class cvsToWebpage {
             $objOptions->update_options();
            
         }
+        
+         new displayForm;
     }
      
 }
