@@ -3,7 +3,7 @@ Contributors: lizeipe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W884YAWEDPA9U
 Tags: CSV , Webpage , Wordpress , Plugin,Excel Data
 Requires at least: 2.0.2
-Tested up to: 3.0
+Tested up to: 4.2.2
 Stable tag: 4.3
 
 CSV (Comma Separated Value) to Webpage plugin help to upload data in a CSV (excel) file to webpage in one click.
@@ -16,7 +16,6 @@ This plugin is very helpful for those who need to display dynamic data from thei
 
 CSV to Webpage plugin will come very handy if you manage a sports website in which you need to update scores, points table etc. regularly. Your updated excel file will go live on to your website with just few clicks of the mouse.
 
-Live Demo - <a href="http://pearlbells.co.uk/extensions/csv-to-webpage">Click here</a>
 
 == Installation ==
 
