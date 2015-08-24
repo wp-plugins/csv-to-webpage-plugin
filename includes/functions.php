@@ -1,5 +1,5 @@
 <?php
-
+namespace csvpearlbells;
 class func {
     
      public function __construct() {
@@ -11,7 +11,9 @@ class func {
           
             $temp = explode(".", $_FILES["uploadedfile"]["name"]);
             $extension = end($temp);
-            if ((($_FILES["uploadedfile"]["type"] == "application/vnd.ms-excel"))
+            $mimes = array('application/vnd.ms-excel','text/plain','text/csv','text/tsv');
+           
+            if (in_array($_FILES['uploadedfile']['type'],$mimes )
             && ($_FILES["uploadedfile"]["size"] < 2000000)
             && in_array($extension, $allowedExts))
               {

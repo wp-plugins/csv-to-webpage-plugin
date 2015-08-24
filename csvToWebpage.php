@@ -23,11 +23,12 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 */
-include_once 'form.php';
-include_once 'data.php';
-include_once 'optionsValues.php';
+namespace csvpearlbells;
+include_once 'includes/form.php';
+include_once 'includes/data.php';
+include_once 'includes/optionsValues.php';
 include_once 'includes/functions.php';
-include_once 'style.php';
+include_once 'includes/style.php';
 
 class cvsToWebpage {
     
