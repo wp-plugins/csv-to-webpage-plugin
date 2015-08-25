@@ -3,7 +3,7 @@ Contributors: lizeipe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W884YAWEDPA9U
 Tags: CSV , Webpage , Wordpress , Plugin,Excel Data
 Requires at least: 2.0.2
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: 4.3
 
 CSV (Comma Separated Value) to Webpage plugin help to upload data in a CSV (excel) file to webpage in one click.
@@ -62,6 +62,9 @@ Added uploading option
 Changed the file structure
 
 == Upgrade Notice ==
+
+= 4.0 =
+Fixed Invalid file error in firefox
 
 = 3.0 =
 Changed the file structure
