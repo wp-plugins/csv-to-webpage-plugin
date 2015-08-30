@@ -2,7 +2,7 @@
 /*
 Plugin Name: CSV to Webpage Pearlbells
 Plugin URI: http://pearlbells.co.uk/
-Description:  CSV to Webpage Pearlbells
+Description:  Display Excel files to Wordpress Website 
 Version:  4.0
 Author:Pearlbells
 Author URI: http://pearlbells.co.uk/contact-page
@@ -31,14 +31,20 @@ include_once 'includes/functions.php';
 include_once 'includes/style.php';
 
 class cvsToWebpage {
-    
+   
+     private $objOptions;
+ 
      public function __construct() {
          add_action( 'admin_menu', array( $this, 'menu' ) );
-         $objOptions = new optionsValues;
-         $objOptions->add_options();
+         $this->objOptions = new optionsValues;
+         $this->objOptions->add_options();
          new data;
          new styleData;
-         
+         register_deactivation_hook(__FILE__, array( $this, 'pearl_uninstall' ));
+     }
+     
+     public function pearl_uninstall() {
+         $this->objOptions->delete_options();
      }
      
      public function menu() {
@@ -59,8 +65,7 @@ class cvsToWebpage {
             $objFunc->uploadFile();
         }
         if($_REQUEST['submit']) {
-            $objOptions = new optionsValues;
-            $objOptions->update_options();
+            $this->objOptions->update_options();
            
         }
         

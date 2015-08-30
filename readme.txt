@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: lizeipe 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W884YAWEDPA9U
-Tags: CSV , Webpage , Wordpress , Plugin,Excel Data
+Tags: CSV , CSV Wordpress Plugin , Excel to wordpress , Display Excel Data
 Requires at least: 2.0.2
 Tested up to: 4.3
 Stable tag: 4.3
