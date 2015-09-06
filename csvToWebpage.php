@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: CSV to Webpage Pearlbells
+Plugin Name: CSV to Responsive Tables
 Plugin URI: http://pearlbells.co.uk/
 Description:  Display Excel files to Wordpress Website 
 Version:  4.0
@@ -33,13 +33,13 @@ include_once 'includes/style.php';
 class cvsToWebpage {
    
      private $objOptions;
- 
+   
      public function __construct() {
          add_action( 'admin_menu', array( $this, 'menu' ) );
          $this->objOptions = new optionsValues;
          $this->objOptions->add_options();
          new data;
-         new styleData;
+         new styleData();
          register_deactivation_hook(__FILE__, array( $this, 'pearl_uninstall' ));
      }
      

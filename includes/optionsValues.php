@@ -1,11 +1,7 @@
 <?php
 namespace csvpearlbells;
 class optionsValues {
-    
-    public function __construct() {
-       
-    }
-    
+   
     public function add_options()
     {
             add_option('pearl_csv_to_webpage_bg_color','#ffffff','','yes');
@@ -36,15 +32,9 @@ class optionsValues {
         }
         
         if($ok)
-        {
             $message = '<div id="message" class="updated fade"><p>Options Saved</p></div>';
-        }
         else
-        {
             $message = '<div id="message" class="error fade"><p>Failed to save options</p></div> ';
-
-        }
-       
         echo $message;
        
         
@@ -63,8 +53,6 @@ class optionsValues {
             delete_option('pearl_csv_to_webpage_mouseover_color');
             delete_option('pearl_csv_to_webpage_alt_mouseover_color');
     }
-    
    
-    
 }
 ?>

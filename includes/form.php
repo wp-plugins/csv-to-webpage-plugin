@@ -33,32 +33,32 @@ class displayForm {
           
           $displayOptionsForm = '
                 
-                <form method="post" action="'.$PHP_SELF.'">
+            <form method="post" action="'.$PHP_SELF.'">
 
-                    <label for="pearl_csv_to_webpage_bg_color">Bg Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_bg_color" value="'.$bg_color.'"/>
-                    <label for="pearl_csv_to_webpage_alt_bg_color">Alt Bg Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_alt_bg_color" value="'.$alt_bg_color.'"/><br/>
-                    <label for="pearl_csv_to_webpage_font_color">Font Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_font_color" value="'.$font_color.'"/>
-                    <label for="pearl_csv_to_webpage_alt_font_color">Alt Font Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_alt_font_color" value="'.$alt_font_color.'"/><br/>
-                    <label for="pearl_csv_to_webpage_border_width">Border Width :</label>
-                    <input type="text" name="pearl_csv_to_webpage_border_width" value="'.$border_width.'"/>
-                    <label for="pearl_csv_to_webpage_border_color">Border Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_border_color" value="'.$border_color.'"/>   <br/> 
-                    <label for="pearl_csv_to_webpage_padding">Padding :</label>
-                    <input type="text" name="pearl_csv_to_webpage_padding" value="'.$padding.'"/>
-                    <label for="pearl_csv_to_webpage_fontsize">Font Size :</label>
-                    <input type="text" name="pearl_csv_to_webpage_fontsize" value="'.$fontsize.'"/>
-                     <label for="pearl_csv_to_webpage_mouseover_color">Mousehover Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_mouseover_color" value="'.$mouseover_color.'"/><br/> 
-                    <label for="pearl_csv_to_webpage_alt_mouseover_color">Mousehover(Font) Color :</label>
-                    <input type="text" name="pearl_csv_to_webpage_alt_mouseover_color" value="'.$alt_mouseover_color.'"/>
-                    <input type="submit" name="submit" value="Submit"/>
+                <label for="pearl_csv_to_webpage_bg_color">Bg Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_bg_color" value="'.$bg_color.'"/>
+                <label for="pearl_csv_to_webpage_alt_bg_color">Alt Bg Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_alt_bg_color" value="'.$alt_bg_color.'"/><br/>
+                <label for="pearl_csv_to_webpage_font_color">Font Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_font_color" value="'.$font_color.'"/>
+                <label for="pearl_csv_to_webpage_alt_font_color">Alt Font Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_alt_font_color" value="'.$alt_font_color.'"/><br/>
+                <label for="pearl_csv_to_webpage_border_width">Border Width :</label>
+                <input type="text" name="pearl_csv_to_webpage_border_width" value="'.$border_width.'"/>
+                <label for="pearl_csv_to_webpage_border_color">Border Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_border_color" value="'.$border_color.'"/>   <br/> 
+                <label for="pearl_csv_to_webpage_padding">Padding :</label>
+                <input type="text" name="pearl_csv_to_webpage_padding" value="'.$padding.'"/>
+                <label for="pearl_csv_to_webpage_fontsize">Font Size :</label>
+                <input type="text" name="pearl_csv_to_webpage_fontsize" value="'.$fontsize.'"/>
+                 <label for="pearl_csv_to_webpage_mouseover_color">Mousehover Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_mouseover_color" value="'.$mouseover_color.'"/><br/> 
+                <label for="pearl_csv_to_webpage_alt_mouseover_color">Mousehover(Font) Color :</label>
+                <input type="text" name="pearl_csv_to_webpage_alt_mouseover_color" value="'.$alt_mouseover_color.'"/>
+                <input type="submit" name="submit" value="Submit"/>
 
-                </form> ';
-          
+            </form> ';
+
           echo $displayOptionsForm;
 
         
