@@ -14,6 +14,7 @@ class optionsValues {
             add_option('pearl_csv_to_webpage_fontsize','12px','','yes');
             add_option('pearl_csv_to_webpage_mouseover_color','#eeeeee','','yes');
             add_option('pearl_csv_to_webpage_alt_mouseover_color','#999999','','yes');
+            add_option('pearl_csv_to_webpage_width','90%','','yes');
     }
     
     public function update_options() {
@@ -52,6 +53,7 @@ class optionsValues {
             delete_option('pearl_csv_to_webpage_fontsize');
             delete_option('pearl_csv_to_webpage_mouseover_color');
             delete_option('pearl_csv_to_webpage_alt_mouseover_color');
+            delete_option('pearl_csv_to_webpage_width');
     }
    
 }

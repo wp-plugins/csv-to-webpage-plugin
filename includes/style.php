@@ -17,11 +17,14 @@ class styleData {
                     border-width: '.get_option('pearl_csv_to_webpage_border_width').';
                     border-color: '.get_option('pearl_csv_to_webpage_border_color').';
                     font-size: '.get_option('pearl_csv_to_webpage_fontsize').';
+                    width: '.get_option('pearl_csv_to_webpage_width').';
                 }
+                .pearl_tblstyle tbody tr:nth-of-type(odd) td,
                 .pearl_tblstyle tbody tr:nth-of-type(odd) {
                     background-color: '.get_option('pearl_csv_to_webpage_alt_bg_color').';
                     color: '.get_option('pearl_csv_to_webpage_alt_font_color').';
                 }
+                .pearl_tblstyle tbody tr:nth-of-type(even) td,
                 .pearl_tblstyle tbody tr:nth-of-type(even) {
                     background-color: '.get_option('pearl_csv_to_webpage_bg_color').';
                     color: '.get_option('pearl_csv_to_webpage_font_color').';

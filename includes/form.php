@@ -55,6 +55,8 @@ class displayForm {
                 <input type="text" name="pearl_csv_to_webpage_mouseover_color" value="'.$mouseover_color.'"/><br/> 
                 <label for="pearl_csv_to_webpage_alt_mouseover_color">Mousehover(Font) Color :</label>
                 <input type="text" name="pearl_csv_to_webpage_alt_mouseover_color" value="'.$alt_mouseover_color.'"/>
+                <label for="pearl_csv_to_webpage_width">Width (in %) :</label>
+                <input type="text" name="pearl_csv_to_webpage_width" value="'.get_option('pearl_csv_to_webpage_width').'"/>
                 <input type="submit" name="submit" value="Submit"/>
 
             </form> ';
